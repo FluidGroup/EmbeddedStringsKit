@@ -44,5 +44,9 @@ extension Strings {
 ```
 
 ```swift
-let localizedText = Strings(ja: "こんにちは {{name}} です。", en: "Hello, I'm {{name}}.").string(parameters: ["name" : "John"])
+let localizedText = Strings(
+  ja: "こんにちは {{name}} です。",
+  en: "Hello, I'm {{name}}."
+  )
+  .string(parameters: ["name" : "John"])
 ```

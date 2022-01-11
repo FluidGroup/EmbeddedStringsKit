@@ -22,6 +22,10 @@ extension String {
 public struct LocalizedStringsLanguage: Hashable {
 
   public let identifier: String
+
+  public init(identifier: String) {
+    self.identifier = identifier
+  }
 }
 
 public protocol LocalizedStringsTraitType {

@@ -16,6 +16,14 @@ extension String {
         let format = "{{\(arg.key)}}"
         text = text.replacingOccurrences(of: format, with: arg.value.description)
       }
+      do {
+        let format = "{\(arg.key)}"
+        text = text.replacingOccurrences(of: format, with: arg.value.description)
+      }
+      do {
+        let format = "{ \(arg.key) }"
+        text = text.replacingOccurrences(of: format, with: arg.value.description)
+      }
     }
 
     self = text
